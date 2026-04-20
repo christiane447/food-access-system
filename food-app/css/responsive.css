@@ -1,0 +1,62 @@
+/* ===== RESPONSIVE CSS ===== */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+  .hero-content { grid-template-columns: 1fr; text-align: center; }
+  .hero-imgs { max-width: 400px; margin: 0 auto; }
+  .hero-actions { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .categories-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .auth-page { grid-template-columns: 1fr; }
+  .auth-visual { display: none; }
+  .cart-layout { grid-template-columns: 1fr; }
+  .cart-summary-card { position: static; }
+  .checkout-layout { grid-template-columns: 1fr; }
+  .profile-layout { grid-template-columns: 1fr; }
+  .profile-sidebar { position: static; }
+  .product-detail-layout { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .features-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Mobile: under 768px */
+@media (max-width: 768px) {
+  :root { --navbar-h: 60px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero { padding: 3rem 1.5rem; min-height: auto; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-imgs { grid-template-columns: 1fr 1fr; gap: 0.75rem; max-width: 280px; }
+  .section { padding: 3rem 1.25rem; }
+  .section-title { font-size: 1.7rem; }
+  .categories-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .products-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .auth-form-side { padding: 2rem 1.25rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .hero-stats { gap: 1.5rem; }
+  .cart-item { grid-template-columns: 64px 1fr; }
+  .cart-item-actions { grid-column: 1 / -1; }
+  .features-grid { grid-template-columns: 1fr; }
+  .product-action-row { flex-direction: column; }
+  .page-header h1 { font-size: 1.6rem; }
+  .not-found-num { font-size: 5rem; }
+  .promo-banner { font-size: 0.78rem; }
+  .filter-bar { flex-direction: column; align-items: stretch; }
+  .toast-container { left: 1rem; right: 1rem; bottom: 1rem; }
+  .toast { min-width: auto; }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+  .categories-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: 1fr; }
+  .hero-text h1 { font-size: 1.7rem; }
+}
+
+/* Print styles */
+@media print {
+  .navbar, .footer, .toast-container { display: none; }
+  body { background: white; color: black; }
+}
